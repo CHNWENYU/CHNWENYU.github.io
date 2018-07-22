@@ -4,125 +4,130 @@
 <head>
   <meta charset="utf-8">
   <meta name="author" content="WenYu">
-  <meta name="keywords" content="design,wenyu,WenYu,WENYU,Wenyu,chnwenyu"/>
-  <meta name="keywords" content="设计,闻宇,主页"/>
+  <meta name="keywords" content="design,wenyu,WenYu,WENYU,Wenyu,chnwenyu" />
+  <meta name="keywords" content="设计,闻宇,主页" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>WenYu的主页（建设中…）</title>
   <link rel="icon" type="image/x-icon" href="./image/icon.ico">
-
   <style media="screen">
-    html,
+    *,
     body {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
-      width: 100%;
-      height: 100%;
-      margin: 0px;
-      padding: 0px;
     }
 
-    .bg {
-      width: 100%;
-      height: 100%;
-      background: url(./image/bgz.jpg) no-repeat center;
-      background-size: cover;
-    }
+    .website {}
 
-    .container {
-      width: 90%;
-      height: 90%;
-      margin: auto;
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-    }
-
-    .button {
-      width: 150px;
-      padding-top: 15px;
-      padding-right: 10px;
-      padding-bottom: 15px;
-      padding-left: 10px;
-      margin: auto;
-      position: absolute;
-      left: 50%;
-      top: 6.5%;
-      transform: translate(-50%, -50%);
-      letter-spacing: 2px;
-      border: 1.8px solid #FFFFFF;
-      color: #FFFFFF;
-      transition: all 0.3s linear;
-      text-align: center;
-      vertical-align: middle;
-      font-weight: 600;
-      opacity: 0.85;
-    }
-
-    .button:hover {
-      background-color: #6DC7D0;
-      color: white;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .click {
-      color: white;
-      text-decoration: none;
-    }
-
-    .audio {
-      padding-top: 15px;
-      padding-right: 10px;
-      padding-bottom: 15px;
-      padding-left: 10px;
-      margin: auto;
+    #header {
+      width: 75%;
+      height: 40rem;
       position: fixed;
       left: 50%;
-      top: 86%;
+      top: 50%;
       transform: translate(-50%, -50%);
-      opacity: 0.3;
+      background-image: url(bgz1.jpg);
+      background-size: cover;
+      background-position: center;
+      animation: opacity 3s 1;
+      animation: image 12s ease 1.5s infinite normal;
+    }
+
+    @keyframes opacity {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes image {
+      33% {
+        background-image: url(bgz2.jpg);
+      }
+      66% {
+        background-image: url(bgz3.jpg);
+      }
+      100% {
+        background-image: url(gbz1.jpg);
+      }
+    }
+
+
+    .inner {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.79);
+      animation: inner 1.5s 1;
+    }
+
+    @keyframes inner {
+      from {
+        opacity: 0.5;
+        margin-top: 5rem;
+      }
+      to {
+        opacity: 1;
+        margin-top: 0;
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-family: sans-serif;
+    }
+
+    .inner p {
+      font-size: 1rem;
+      font-family: sans-serif;
     }
 
     .beian {
-      margin: auto;
       position: fixed;
       left: 50%;
-      top: 94.5%;
+      top: 95%;
       transform: translate(-50%, -50%);
-      opacity: 0.5;
     }
 
     .beian p {
-      margin: 4px;
-      text-align: center;
-      font-size: 0.85rem;
       color: white;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.79);
+      font-size: 0.6rem;
+      text-align: center;
+      opacity: 0.4;
+      font-family: sans-serif;
+      line-height: 1.2rem;
     }
 
-    .beianhao {
-      text-decoration: none;
+    .audio {
+      position: fixed;
+      left: 50%;
+      top: 95%;
+      transform: translate(-50%, -50%);
+      opacity: 0.05;
     }
   </style>
-
-
 </head>
 
 <body>
 
-  <div class="bg">
-
-    <div class="container">
-
-      <div class="button">
-        <a class="click" href="hello.html">CLICK HERE
+  <div class="website">
+    <header id="header">
+      <div class="inner">
+        <a class="click" href="hello.html">
+          <h1>Enter</h1>
         </a>
-      </div>
-
-      <div class="audio">
-
-        <audio src="./audio/rongshu.mp3" controls="controls" autoplay="autoplay" loop="loop">
-        </audio>
+        <p>Find me.</p>
       </div>
 
       <div class="beian">
@@ -132,10 +137,43 @@
         </a>
       </div>
 
+    </header>
+
+
+    <div id="container">
+
+      <section class="one">
+
+      </section>
+
+      <section class="two">
+
+      </section>
+
+      <section class="three">
+
+      </section>
+
+      <section class="four">
+
+      </section>
+
     </div>
 
 
+    <footer id="footer">
+
+      <div class="audio">
+        <audio src="./audio/rongshu.mp3" controls="controls" autoplay="autoplay" loop="loop">
+            </audio>
+      </div>
+
+    </footer>
+
+
+
   </div>
+
 
 </body>
 
