@@ -29,8 +29,10 @@
       background-image: url(./image/bgz1.jpg);
       background-size: cover;
       background-position: center;
-      animation: opacity 3s 1;
-      animation: image 15s ease 0s 1 normal;
+      opacity: 0;
+      animation: opacity 3s ease 1.5s 1 normal;
+      animation-fill-mode: forwards;
+      /* animation: image 9s ease 2s 1 normal; */
     }
 
     @keyframes opacity {
@@ -42,7 +44,7 @@
       }
     }
 
-    @keyframes image {
+    /* @keyframes image {
       0% {
         background-image: url(./image/bgz2.jpg);
       }
@@ -52,8 +54,7 @@
       100% {
         background-image: url(./image/gbz1.jpg);
       }
-    }
-
+    } */
 
     .inner {
       position: fixed;
@@ -63,13 +64,14 @@
       text-align: center;
       color: white;
       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.79);
-      animation: inner 1.5s 1;
+      animation: inner 2s ease 1.5s 1 normal;
+      animation-fill-mode: forwards;
     }
 
     @keyframes inner {
       from {
         opacity: 0.5;
-        margin-top: 5rem;
+        margin-top: 5.5rem;
       }
       to {
         opacity: 1;
