@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./image/pic22.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* header */
+
+/* header */
+
+/* header */
+
+/* header */
+
+#header {
+  width: 100vw;
+  height: 3.2rem;
+  padding: 0 4%;
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease 0s;
+}
+
+a:hover {
+  color: rgb(210, 210, 210);
+}
+
+.logo {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+
+nav a {
+  margin-left: 1rem;
+  font-weight: normal;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+}
+
+/* banner */
+
+/* banner */
+
+/* banner */
+
+/* banner */
+
+#banner {
+  color: rgba(250, 250, 250, 0.9);
+  width: 70%;
+  height: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#banner p:first-child {
+  font-size: 4.5rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+
+#banner p:last-child {
+  font-size: 1.7rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
