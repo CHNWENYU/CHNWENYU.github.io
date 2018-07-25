@@ -152,17 +152,16 @@ nav a {
   }
 }
 
-.test {
+.effect {
   width: 100vw;
   height: 100vh;
   background-color: rgb(32, 32, 32);
-  display: block;
   position: fixed;
-  animation: black 2s ease 1s 1 normal;
+  animation: effect 2s ease 1s 1 normal;
   animation-fill-mode: forwards;
 }
 
-@keyframes black {
+@keyframes effect {
   0% {
     opacity: 1;
   }
