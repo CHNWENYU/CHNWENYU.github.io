@@ -153,8 +153,8 @@ nav a {
 }
 
 .test {
-  width: 120%;
-  height: 120%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgb(32, 32, 32);
   display: block;
   position: fixed;
