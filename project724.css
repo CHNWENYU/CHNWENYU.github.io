@@ -121,3 +121,52 @@ nav a {
   transform: translate(-50%, -50%);
   opacity: 0.05;
 } */
+
+#banner p:first-child {
+  opacity: 0;
+  animation: one 2s ease 2s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes one {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#banner p:last-child {
+  opacity: 0;
+  animation: two 2s ease 3s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes two {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.test {
+  width: 120%;
+  height: 120%;
+  background-color: rgb(32, 32, 32);
+  display: block;
+  position: fixed;
+  animation: black 2s ease 1s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes black {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
