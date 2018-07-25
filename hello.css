@@ -31,7 +31,7 @@ body {
   background-position: top center;
   background-attachment: fixed;
   background-color: rgb(14, 14, 12);
-  font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei", "sans-serif";
 }
 
 @media screen and (max-width: 1280px) {
