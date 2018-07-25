@@ -159,6 +159,7 @@ nav a {
   position: fixed;
   animation: effect 2s ease 1s 1 normal;
   animation-fill-mode: forwards;
+  z-index: 99999;
 }
 
 @keyframes effect {
