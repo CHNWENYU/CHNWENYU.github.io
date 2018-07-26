@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(40, 40, 40);
+  font-family: sans-serif, "Microsoft YaHei";
+}
+
+/* header */
+
+/* header */
+
+/* header */
+
+/* header */
+
+#header {
+  width: 100vw;
+  min-width: 405px;
+  height: 3.2rem;
+  padding: 0 4%;
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease 0s;
+}
+
+a:hover {
+  color: rgb(210, 210, 210);
+}
+
+.logo {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+nav a {
+  margin-left: 1rem;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+/* contact */
+
+/* contact */
+
+/* contact */
+
+/* contact */
+
+#contact {
+  position: fixed;
+  left: 50%;
+  top: 52.5%;
+  transform: translate(-50%, -50%);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#contact p {
+  color: white;
+  text-align: center;
+}
+
+.one, .two, .three, .four {
+  padding-bottom: 2rem;
+}
+
+.one .oneone {
+  font-size: 3.5rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+  opacity: 0;
+  animation: oo 2s ease 1.2s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes oo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.one .onetwo {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  opacity: 0.6;
+  opacity: 0;
+  animation: ot 2s ease 2.1s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ot {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.one .onethree {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  opacity: 0.6;
+  opacity: 0;
+  animation: oth 2s ease 3s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes oth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.two p:first-child {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  opacity: 0.6;
+  opacity: 0;
+  animation: to 2s ease 3.9s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes to {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.two p:last-child {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  opacity: 0;
+  animation: tt 2s ease 4.8s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tt {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.three p:first-child {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  opacity: 0.6;
+  opacity: 0;
+  animation: tho 2s ease 5.7s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tho {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.three p:last-child {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  opacity: 0;
+  animation: tht 2s ease 6.6s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tht {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.four p:first-child {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  opacity: 0.6;
+  opacity: 0;
+  animation: fo 2s ease 7.5s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.four p:last-child {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  opacity: 0;
+  animation: ft 2s ease 8.4s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.five p:first-child {
+  font-size: 1rem;
+  font-weight: lighter;
+  opacity: 0.6;
+  opacity: 0;
+  animation: fio 2s ease 9.3s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fio {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.five p:last-child {
+  font-size: 1rem;
+  font-weight: lighter;
+  opacity: 0.6;
+  opacity: 0;
+  animation: fit 2s ease 9.3s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fit {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
