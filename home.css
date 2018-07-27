@@ -36,17 +36,17 @@ body {
   justify-content: space-between;
 }
 
-a {
+#header a {
   color: white;
   text-decoration: none;
   transition: color 0.5s ease 0s;
 }
 
-a:hover {
+#header a:hover {
   color: rgb(210, 210, 210);
 }
 
-.logo {
+#header .logo {
   font-weight: bolder;
   font-size: 1.5rem;
 }
