@@ -131,6 +131,7 @@ nav a {
   text-decoration: none;
 }
 
-.p1 {
-  padding-bottom: 1rem;
+.p2 {
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
 }

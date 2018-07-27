@@ -81,6 +81,7 @@ nav a {
 #contact p {
   color: white;
   text-align: center;
+  text-decoration: none;
 }
 
 .one, .two, .three, .four {
