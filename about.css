@@ -51,17 +51,20 @@ body {
 }
 
 .nav {
+  width: 11.1rem;
+  height: 3.2rem;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
-  align-content: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .nav a {
-  padding-left: 1rem;
   font-size: 0.8rem;
+  font-family: "Microsoft YaHei";
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 /* container */
@@ -91,7 +94,7 @@ body {
 
 .part01 {
   padding-top: 2.5rem;
-  weight: 100%;
+  width: 100%;
   height: auto;
 }
 
