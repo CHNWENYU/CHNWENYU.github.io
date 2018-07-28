@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -23,11 +23,13 @@ body {
 
 #header {
   width: 100vw;
-  min-width: 405px;
+  min-width: 320px;
   height: 3.2rem;
   padding: 0 4%;
   background-color: rgb(32, 32, 32);
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   align-content: center;
   justify-content: space-between;
@@ -48,6 +50,15 @@ body {
   font-size: 1.5rem;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
 nav a {
   margin-left: 1rem;
   font-weight: normal;
@@ -63,11 +74,10 @@ nav a {
 /* contact */
 
 #contact {
-  position: fixed;
-  left: 50%;
-  top: 52.5%;
-  transform: translate(-50%, -50%);
+  margin: 9% 0 2.5rem 0;
 }
+
+@media screen and (max-height:720px) {}
 
 .inner {
   display: flex;
