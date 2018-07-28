@@ -27,7 +27,7 @@ body {
 
 #header {
   width: 100%;
-  min-width: 380px;
+  min-width: 320px;
   height: 3.2rem;
   padding: 0 4%;
   background-color: rgb(32, 32, 32);
