@@ -94,6 +94,11 @@ nav a {
   text-decoration: none;
 }
 
+#contact a {
+  color: white;
+  text-decoration: none;
+}
+
 .one, .two, .three, .four {
   padding-bottom: 2rem;
 }

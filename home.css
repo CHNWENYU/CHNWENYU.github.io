@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -120,6 +121,10 @@ nav a {
   text-align: center;
   opacity: 0.4;
   line-height: 1.2rem;
+}
+
+.beian a {
+  text-decoration: none;
 }
 
 /* .audio {
