@@ -26,8 +26,8 @@ body {
 /* header */
 
 #header {
-  width: 100vw;
-  min-width: 320px;
+  width: 100%;
+  min-width: 380px;
   height: 3.2rem;
   padding: 0 4%;
   background-color: rgb(32, 32, 32);
@@ -54,18 +54,17 @@ body {
   font-size: 1.5rem;
 }
 
-nav {
+.nav {
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
+  flex-direction: row;
   align-items: center;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-nav a {
-  margin-left: 1rem;
-  font-weight: normal;
+.nav a {
+  padding-left: 1rem;
   font-size: 0.8rem;
 }
 
