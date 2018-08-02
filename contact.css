@@ -102,7 +102,10 @@ nav a {
   text-decoration: none;
 }
 
-.one, .two, .three, .four {
+.one,
+.two,
+.three,
+.four {
   padding-bottom: 2rem;
 }
 

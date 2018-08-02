@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1;
+  margin: 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 0 0 50px #afafaf;
+  transition: transform 0.3s;
+}
+
+.nav-open main {
+  transform: scale(0.8);
+}
+
+.intro {
+  height: 100vh;
+  width: 100%;
+  display: table;
+  background: #26292f url(./image/bgz1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+}
+
+.nav-trigger {
+  position: fixed;
+  z-index: 4;
+  top: 40px;
+  right: 40px;
+  width: 44px;
+  height: 44px;
+  color: transparent;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+
+.nav-trigger span,
+.nav-trigger span::before,
+.nav-trigger span::after {
+  position: absolute;
+  width: 36px;
+  height: 4px;
+  background-color: rgb(210, 210, 210);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-trigger span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-trigger span::before,
+.nav-trigger span::after {
+  content: '';
+  top: 0;
+  left: 0;
+}
+
+.nav-trigger span::before {
+  transform: translateY(-12px);
+}
+
+.nav-trigger span::after {
+  transform: translateY(12px);
+}
+
+.nav-trigger:hover span,
+.nav-trigger:hover span::before,
+.nav-trigger:hover span::after {
+  background-color: rgb(255, 255, 255);
+}
+
+.nav-open .nav-trigger span {
+  background: transparent;
+}
+
+.nav-open .nav-trigger span::before,
+.nav-open .nav-trigger span::after {
+  background-color: rgb(55, 55, 55);
+}
+
+.nav-open .nav-trigger span::before {
+  transform: rotate(45deg);
+}
+
+.nav-open .nav-trigger span::after {
+  transform: rotate(-45deg);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(55, 55, 55);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s, transform 0.3s;
+}
+
+.nav-open .overlay {
+  opacity: 0.6;
+  visibility: visible;
+  transform: scale(0.8);
+}
+
+.nav-container {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  width: 30%;
+  min-width: 250px;
+  max-width: 350px;
+  height: 100vh;
+  padding: 2em 3em;
+  background-color: white;
+  /* transform: translateZ(0); */
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+.nav-open .nav-container {
+  transform: translateX(0);
+}
+
+.nav-container h2 {
+  font-weight: bold;
+  font-size: 15px;
+  color: #AAA;
+  margin: 1.5em 0;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav a {
+  display: block;
+  padding: 0.5em 0em;
+  text-decoration: none;
+  color: #5d5d5d;
+}

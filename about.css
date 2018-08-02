@@ -86,7 +86,8 @@ nav a {
   width: 80%;
 }
 
-#container a:first-child, #container a:last-child {
+#container a:first-child,
+#container a:last-child {
   font-style: italic;
 }
 
@@ -143,7 +144,8 @@ nav a {
 
 /* content */
 
-.content, .content a {
+.content,
+.content a {
   color: white;
   font-size: 0.85rem;
   opacity: 0.65;
