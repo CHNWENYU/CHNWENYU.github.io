@@ -119,6 +119,7 @@ nav a {
   width: 1.4rem;
   height: 0.14rem;
   background-color: white;
+  transition: transform 0.3s;
 }
 
 .nav-trigger span::before,
@@ -166,6 +167,7 @@ nav a {
   height: 100%;
   padding: 3rem 2rem;
   background-color: rgb(32, 32, 32);
+  transform: translateZ(0);
   transform: translateX(100%);
   transition: transform 0.3s;
 }
@@ -181,6 +183,7 @@ nav a {
 .nav-container h2 {
   text-transform: uppercase;
   font-size: 0.8rem;
+  padding-top: 1rem;
   padding-bottom: 1.5rem;
   font-weight: bolder;
   color: rgb(99, 99, 99);

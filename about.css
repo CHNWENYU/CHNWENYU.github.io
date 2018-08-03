@@ -1,76 +1,195 @@
-* {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   border: 0;
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 body {
-  min-width: 330px;
   width: 100%;
-  height: 100vh;
-  background-color: rgb(40, 40, 40);
+  height: 100%;
   font-family: sans-serif, "Microsoft YaHei";
-  font-size: 100%;
 }
-
-/* header */
-
-/* header */
-
-/* header */
-
-/* header */
 
 #header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 99999;
-}
-
-.inner {
+  z-index: 1;
   width: 100%;
   height: 3.2rem;
-  padding: 0 4%;
-  background-color: rgb(32, 32, 32);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
+  background-color: #202020;
 }
 
 .inner a {
-  color: white;
   text-decoration: none;
-  transition: color 0.5s ease 0s;
-  margin-top: 1.8px;
+  color: white;
+  transition: color 0.3s;
 }
 
 .inner a:hover {
-  color: rgb(210, 210, 210);
+  color: #d2d2d2;
 }
 
-.inner .logo {
-  font-weight: bolder;
+.logo {
+  position: absolute;
+  top: 0;
+  left: 1.4rem;
+  line-height: 3.2rem;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 nav {
-  width: 11.5rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 1.4rem;
+  line-height: 3.2rem;
 }
 
 nav a {
-  font-size: 0.8rem;
-  font-weight: normal;
+  font-size: 0.7rem;
+  margin-left: 0.7rem;
+}
+
+/* nav-trigger */
+
+.nav-trigger {
+  position: fixed;
+  z-index: 3;
+  top: 1rem;
+  right: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.nav-trigger span,
+.nav-trigger span::before,
+.nav-trigger span::after {
+  position: absolute;
+  width: 1.2rem;
+  height: 0.2rem;
+  background-color: white;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.nav-trigger span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-trigger span::before,
+.nav-trigger span::after {
+  content: '';
+}
+
+.nav-trigger span::before {
+  transform: translateY(-0.5rem);
+}
+
+.nav-trigger span::after {
+  transform: translateY(0.5rem);
+}
+
+.nav-open .nav-trigger span {
+  background-color: transparent;
+}
+
+.nav-open .nav-trigger span::before {
+  transform: rotate(45deg);
+}
+
+.nav-open .nav-trigger span::after {
+  transform: rotate(-45deg);
+}
+
+.nav-container {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 30%;
+  min-width: 250px;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #202020;
+  padding: 3.2rem 3rem;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+.nav-open .nav-container {
+  transform: translateX(0);
+  box-shadow: 0 0 30px rgba(32, 32, 32, 0.85);
+}
+
+.nav-container ul {
+  list-style: none;
+}
+
+.nav-container h2 {
+  display: -block;
+  text-transform: uppercase;
+  font-size: 0.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bolder;
+  color: #505050;
+}
+
+.nav-container a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.7rem;
+  padding: 0.7rem 0;
+  color: rgb(233, 233, 233);
+}
+
+.sticky {
+  position: relative;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 3.2rem;
+  background-color: #202020;
+}
+
+@media screen and (max-width:4096px) {
+  nav {
+    display: inline;
+  }
+  .nav-trigger {
+    display: none;
+  }
+  .nav-container {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width:720px) {
+  nav {
+    display: none;
+  }
+  .nav-trigger {
+    display: inline;
+  }
+  .nav-container {
+    visibility: visible;
+  }
+}
+
+/* .bg */
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-color: rgb(40, 40, 40);
 }
 
 /* container */
@@ -100,7 +219,7 @@ nav a {
 /* part01 */
 
 .part01 {
-  padding-top: 2.5rem;
+  padding-top: 10%;
   width: 100%;
   height: auto;
 }
@@ -156,4 +275,20 @@ nav a {
 .p2 {
   padding-top: 1rem;
   padding-bottom: 2.5rem;
+}
+
+/* footer */
+
+/* footer */
+
+/* footer */
+
+/* footer */
+
+.audio {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: -3;
+  transform: translate(-50%, -50%);
 }
