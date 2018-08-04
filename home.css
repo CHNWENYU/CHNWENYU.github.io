@@ -190,15 +190,17 @@ nav a {
   position: fixed;
   animation: effect 2s ease 1s 1 normal;
   animation-fill-mode: forwards;
-  z-index: 2;
+  z-index: 5;
 }
 
 @keyframes effect {
   0% {
     opacity: 1;
+    visibility: visible;
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
