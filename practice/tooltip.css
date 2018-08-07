@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: white;
+  background-color: #eee;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: table;
+}
+
+section .center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.trigger {
+  position: relative;
+  display: inline-block;
+  background-color: darkgrey;
+  width: 180px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4), inset 0 2.6px rgba(255, 255, 255, 0.2);
+  cursor: default;
+}
+
+.center ul,
+.center li {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.center ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+.center li {
+  transition: transform 0.3s;
+}
+
+.center li:nth-child(1) {
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.center li:nth-child(2) {
+  top: 100%;
+  background: url(../image/url.bmp) no-repeat center;
+}
+
+.trigger:hover li {
+  transform: translateY(-100%);
+}
+
+.trigger::before {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+  background-color: grey;
+  background-image: url(../image/erweima.jpg);
+  background-position: center;
+  background-size: cover;
+  bottom: 56px;
+  line-height: 60px;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, bottom 0.3s, visibility 0.3s;
+}
+
+.trigger:hover::before {
+  opacity: 1;
+  bottom: 66px;
+  visibility: visible;
+}
