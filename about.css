@@ -300,7 +300,7 @@ nav a {
   padding-bottom: 2.5rem;
 }
 
-.p-wechat {
+.wechat span {
   display: inline;
 }
 
@@ -313,11 +313,14 @@ nav a {
   position: fixed;
   top: 48%;
   left: 50%;
+  z-index: 9;
   transform: translate(-50%, -50%);
   width: 180px;
   height: 180px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
   background-color: grey;
-  background-image: url(./image/erweima.jpg);
+  background-image: url(./image/qrcode1.jpg);
   background-size: cover;
   opacity: 0;
   visibility: hidden;
