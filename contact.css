@@ -296,9 +296,9 @@ nav a {
 }
 
 .info li:nth-child(1) {
-  font-size: 3.5rem;
+  font-size: 2.6rem;
   font-weight: lighter;
-  padding-bottom: 1rem;
+  padding-bottom: 2.1rem;
 }
 
 .info li:nth-child(2),
@@ -321,17 +321,14 @@ nav a {
 .info li:nth-child(3),
 .info li:nth-child(5),
 .info li:nth-child(7),
-.info li:nth-child(9),
-.info li:nth-child(11) {
+.info li:nth-child(9) {
   font-size: 1.8rem;
   font-weight: lighter;
   padding-bottom: 2rem;
 }
 
-.info li:nth-child(1) {
-  font-size: 2.6rem;
-  font-weight: lighter;
-  padding-bottom: 2.1rem;
+.info li:nth-child(11) {
+  padding-bottom: 2rem;
 }
 
 .wechat {
@@ -342,12 +339,12 @@ nav a {
 .wechat::before {
   content: '';
   position: absolute;
-  bottom: 28px;
+  bottom: 25px;
   left: 50%;
   z-index: 9;
   transform: translateX(-50%);
-  width: 170px;
-  height: 170px;
+  width: 180px;
+  height: 180px;
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
   background-color: grey;
@@ -359,7 +356,7 @@ nav a {
 }
 
 .wechat:hover::before {
-  bottom: 38px;
+  bottom: 35px;
   opacity: 1;
   visibility: visible;
 }
