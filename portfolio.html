@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="./image/icon.ico">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header id="header">
+        <div class="inner">
+          <a class="logo" href="home.html">WENYU</a>
+          <nav>
+            <a href="home.html">HOME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+          </nav>
+        </div>
+
+      </header>
+
+      <a href="#" class="nav-trigger">
+        <span></span>
+      </a>
+
+      <div class="nav-container">
+        <h2>Navigation</h2>
+        <a href="home.html">HOME</a></li>
+        <a href="portfolio.html">PORTFOLIO</a></li>
+        <a href="about.html">ABOUT</a></li>
+        <a href="contact.html">CONTACT</a></li>
+      </div>
+
+      <div class="sticky"></div>
+
+      <div class="opacity"></div>
+
+      <div class="bg"></div>
+
+
+      <section class="part01">
+        <div class="inner">
+          <h1>Hey,Here's My Portfolio.</h1>
+          <p>
+            Something original and interesting will be uploaded here.
+          </p>
+          <a href="#">Start</a>
+        </div>
+      </section>
+
+      <section class="part02">
+        <h2>My Gallery</h2>
+        <ul>
+          <li><a href=""><img src="./image/p21.jpg" ></a></li>
+          <li><a href=""><img src="./image/p22.jpg" ></a></li>
+          <li><a href=""><img src="./image/p23.jpg" ></a></li>
+          <li><a href=""><img src="./image/p24.jpg" ></a></li>
+          <li><a href=""><img src="./image/p41.jpg" ></a></li>
+          <li><a href=""><img src="./image/p42.jpg" ></a></li>
+          <li><a href=""><img src="./image/p43.jpg" ></a></li>
+          <li><a href=""><img src="./image/p44.jpg" ></a></li>
+        </ul>
+        <a class="getMore" href="#">Get More</a>
+      </section>
+
+      <section class="part03">
+        <div class="inner">
+          <h3>About</h3>
+          <p>
+            目前正在建设中…
+            <br>内容还没有上传，一些效果还不会做，真让人头大
+            <br>上面的内容都是平时随便拍的照片，凑凑数。
+            <br>为了不显得那么无聊，我决定！复制一些东西过来…
+            <br>How are we constructing the edifice of recovery—the temple which, when completed, will no longer be a temple of money-changers or of beggars, but rather a temple dedicated to and maintained for a greater social justice, a greater welfare
+            for America—the habitation of a sound economic life? We are building, stone by stone, the columns which will support that habitation. Those columns are many in number and though, for a moment the progress of one column may disturb the progress
+            on the pillar next to it, the work on all of them must proceed without let or hindrance.
+          </p>
+        </div>
+      </section>
+
+      <section class="part04">
+        <div class="inner">
+          <h3>Follow Me</h3>
+          <div class="followMe">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+          </div>
+        </div>
+      </section>
+
+
+      <footer id="footer">
+
+        <div class="audio">
+          <audio src="./audio/felicity.mp3" controls="controls" autoplay="autoplay" hidden="hidden" loop="loop">
+            </audio>
+        </div>
+
+      </footer>
+
+
+    </div>
+
+    <script>
+      var navTrigger = document.getElementsByClassName('nav-trigger')[0],
+        wrapper = document.getElementsByClassName('wrapper')[0];
+      navTrigger.addEventListener('click', toggleNav);
+
+      function toggleNav(event) {
+        event.preventDefault();
+        wrapper.classList.toggle('nav-open');
+      }
+    </script>
+
+  </body>
+
+</html>
