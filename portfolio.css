@@ -222,12 +222,13 @@ body {
 /* part01 */
 
 .part01 {
-  padding: 5rem 1.2rem;
+  padding: 30vh 0;
 }
 
 .part01 .inner {
-  text-align: center;
   margin: 0 auto;
+  width: 80%;
+  text-align: left;
   color: white;
   opacity: 0;
   animation: slide-in 0.6s ease 0.6s 1 normal;
@@ -246,7 +247,7 @@ body {
 }
 
 .part01 h1 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   margin-bottom: 1.4rem;
 }
 
@@ -272,6 +273,21 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+@media screen and (min-width:1280px) {
+  .part01 .inner {
+    width: 50%;
+  }
+  .part01 h1 {
+    font-size: 3.2rem;
+  }
+  .part01 p {
+    font-size: 1.2rem;
+  }
+  .part01 a {
+    font-size: 1.2rem;
+  }
+}
+
 /* part02 */
 
 .part02 {
@@ -283,12 +299,12 @@ body {
 
 .part02 h2 {
   font-weight: normal;
-  color: #2e2e2e;
+  color: #121212;
   opacity: 0.9;
   text-align: center;
   font-size: 1.4rem;
-  font-weight: normal;
   margin-bottom: 2rem;
+  font-weight: normal;
 }
 
 .part02 ul {
@@ -310,7 +326,6 @@ body {
     padding-bottom: 2rem;
   }
   .part02 h2 {
-    font-size: 1.4rem;
     margin-bottom: 1.4rem;
   }
 }
@@ -321,22 +336,23 @@ body {
     padding-bottom: 2rem;
   }
   .part02 h2 {
-    font-size: 1.4rem;
     margin-bottom: 1.4rem;
   }
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:780px) {
   .part02 li {
     width: 50%;
   }
+}
+
+@media screen and (max-width:720px) {
   .part02 {
     padding: 1.4rem;
     padding-bottom: 2rem;
   }
   .part02 h2 {
     text-align: left;
-    font-size: 1.4rem;
     margin-bottom: 1.4rem;
   }
 }
@@ -351,7 +367,6 @@ body {
   }
   .part02 h2 {
     text-align: left;
-    font-size: 1.4rem;
     margin-bottom: 1.2rem;
   }
 }
@@ -417,9 +432,9 @@ body {
   }
 }
 
-.part03 h3 {
+.part03 h2 {
   font-weight: normal;
-  color: #2e2e2e;
+  color: #121212;
   opacity: 0.9;
   text-align: left;
   font-size: 1.4rem;
@@ -465,9 +480,9 @@ body {
   }
 }
 
-.part04 h3 {
+.part04 h2 {
   font-weight: normal;
-  color: #2e2e2e;
+  color: #121212;
   opacity: 0.9;
   font-size: 1.4rem;
   font-weight: normal;
