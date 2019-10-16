@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>nav project</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="nav.css">
+  </head>
+
+  <body>
+    <a href="#navigation" class="nav-trigger">
+      Menu<span></span>
+    </a>
+
+    <main>
+      <section class="intro">
+        <h1>Final Project</h1>
+      </section>
+    </main>
+
+    <nav class="nav-container" id="navigation">
+      <header>
+        <h2>Navigation</h2>
+      </header>
+
+      <ul class="nav">
+        <li><a href="">Home</a></li>
+        <li><a href="">Work</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="overlay"></div>
+    <!-- improve main element 3d movement -->
+
+    <script>
+      var navTrigger = document.getElementsByClassName('nav-trigger')[0],
+        body = document.getElementsByTagName('body')[0];
+
+      navTrigger.addEventListener('click', toggleNavigation);
+
+      function toggleNavigation(event) {
+        event.preventDefault();
+        body.classList.toggle('nav-open');
+      }
+    </script>
+
+  </body>
+
+</html>

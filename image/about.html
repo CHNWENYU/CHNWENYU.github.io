@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="./image/icon.ico">
+    <link rel="stylesheet" href="about.css">
+    <title>About</title>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header id="header">
+        <div class="inner">
+          <a class="logo" href="home.html">WENYU</a>
+          <nav>
+            <a href="home.html">HOME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+          </nav>
+        </div>
+
+      </header>
+
+      <a href="#" class="nav-trigger">
+        <span></span>
+      </a>
+
+      <div class="nav-container">
+        <h2>Navigation</h2>
+        <a href="home.html">HOME</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+
+      <div class="sticky"></div>
+
+      <div class="opacity"></div>
+
+      <div class="bg"></div>
+
+
+      <div id="container">
+
+        <section class="part01">
+          <a href="./old/index(old).html">
+          <img class="pic01" src="./image/main.jpg">
+        </a>
+
+        </section>
+
+        <section class="part02">
+
+          <div class="title01">
+            <p>山阴路的夏天</p>
+            <p>李志</p>
+          </div>
+
+          <div class="content">
+
+            <p class="p1">这次你离开了没有像以前那样说再见，再见也他妈的只是再见
+              <br>我们之间从来没有想象的那么接近，只是两棵树的距离
+              <br>你是否还记得山阴路我八楼的房间，房间里唱歌的日日夜夜
+              <br>那么热的夏天你看着外面，看着你在消逝的容颜
+              <br>多么想念你走在我身边的样子，想起来我的爱就不能停止
+              <br>南京的雨不停地下不停地下，就像你沉默的委屈
+              <br>一转眼，我们的城市又到了夏天，对面走来的人都眯着眼
+              <br>人们不敢说话不敢停下脚步，因为心动常常带来危险
+              <br>我多么想念你走在我身边的样子，想起来我的爱就不能停止
+              <br>南京的雨不停地下不停地下，有些人却注定要相遇
+              <br>你是一片光荣的叶子落在我卑贱的心
+              <br>像往常一样我为自己生气并且歌唱
+              <br>那么乏力，爱也吹不动的叶子
+              <br>
+            </p>
+
+            <p class="p2">
+
+              ·&nbsp;&nbsp;更多信息请关注我的微信公众号：
+              <a class="wechat" href="#0">
+                <span>CHNWENYU</span>
+              </a>
+
+              <br> ·&nbsp;&nbsp;这个网站是闲暇时间<a href="./practice/nav.html">学习</a>HTML所做的一个测试网站。我会接着<a href="./practice/tooltip.html">学习</a>，把网站完善好。
+              <a class="future" href="http://www.csswinner.com/">未来</a>会把网站的设计与排版做到理想的样子，内容待定吧。
+
+              <br> ·&nbsp;&nbsp;ZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZXZX
+
+              <br> ·&nbsp;&nbsp;我的联系方式：
+              <a class="contact" href="contact.html">点击这里</a>
+
+            </p>
+
+          </div>
+
+        </section>
+
+      </div>
+
+      <footer id="footer">
+
+        <div class="audio">
+          <audio src="./audio/felicity.mp3" controls="controls" autoplay="autoplay" hidden="hidden" loop="loop">
+            </audio>
+        </div>
+
+      </footer>
+
+
+    </div>
+
+    <script>
+      var navTrigger = document.getElementsByClassName('nav-trigger')[0],
+        wrapper = document.getElementsByClassName('wrapper')[0];
+      navTrigger.addEventListener('click', toggleNav);
+
+      function toggleNav(event) {
+        event.preventDefault();
+        wrapper.classList.toggle('nav-open');
+      }
+    </script>
+
+  </body>
+
+</html>

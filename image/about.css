@@ -1,0 +1,351 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: sans-serif, "Microsoft YaHei";
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 8;
+  width: 100%;
+  height: 3.2rem;
+  background-color: #202020;
+}
+
+#header .inner a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+#header .inner a:hover {
+  color: #d2d2d2;
+}
+
+#header .logo {
+  position: absolute;
+  top: 0;
+  left: 1.4rem;
+  z-index: 9;
+  line-height: 3.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#header nav {
+  position: absolute;
+  top: 0;
+  right: 1.4rem;
+  z-index: 9;
+  line-height: 3.2rem;
+}
+
+#header nav a {
+  font-size: 0.7rem;
+  margin-left: 0.7rem;
+}
+
+/* nav-trigger */
+
+.nav-trigger {
+  position: fixed;
+  z-index: 10;
+  top: 1rem;
+  right: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.nav-trigger span,
+.nav-trigger span::before,
+.nav-trigger span::after {
+  position: absolute;
+  width: 1.2rem;
+  height: 0.2rem;
+  background-color: white;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.nav-trigger span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-trigger span::before,
+.nav-trigger span::after {
+  content: '';
+}
+
+.nav-trigger span::before {
+  transform: translateY(-0.5rem);
+}
+
+.nav-trigger span::after {
+  transform: translateY(0.5rem);
+}
+
+.nav-open .nav-trigger span {
+  background-color: transparent;
+}
+
+.nav-open .nav-trigger span::before {
+  transform: rotate(45deg);
+}
+
+.nav-open .nav-trigger span::after {
+  transform: rotate(-45deg);
+}
+
+.nav-container {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  width: 30%;
+  min-width: 250px;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #202020;
+  padding: 3.2rem 3rem;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+.nav-open .nav-container {
+  transform: translateX(0);
+  box-shadow: 0 0 30px rgba(32, 32, 32, 0.85);
+}
+
+.nav-container ul {
+  list-style: none;
+}
+
+.nav-container h2 {
+  text-transform: uppercase;
+  font-size: 0.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bolder;
+  color: #505050;
+}
+
+.nav-container a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.7rem;
+  padding: 0.7rem 0;
+  color: rgb(233, 233, 233);
+}
+
+.sticky {
+  position: relative;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 3.2rem;
+  background-color: #202020;
+}
+
+@media screen and (max-width:4096px) {
+  nav {
+    display: inline;
+  }
+  .nav-trigger {
+    display: none;
+  }
+  .nav-container {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width:720px) {
+  nav {
+    display: none;
+  }
+  .nav-trigger {
+    display: inline;
+  }
+  .nav-container {
+    visibility: visible;
+  }
+}
+
+/* .bg */
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-color: rgb(40, 40, 40);
+}
+
+/* opacity */
+
+.opacity {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(32, 32, 32);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.nav-open .opacity {
+  opacity: 0.6;
+  visibility: visible;
+}
+
+/* container */
+
+/* container */
+
+/* container */
+
+/* container */
+
+#container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#container a:first-child,
+#container a:last-child {
+  font-style: italic;
+}
+
+/* part01 */
+
+/* part01 */
+
+/* part01 */
+
+/* part01 */
+
+.part01 {
+  padding-top: 10%;
+  width: 100%;
+  height: auto;
+}
+
+.part01 img {
+  width: 100%;
+  display: block;
+}
+
+/* part02 */
+
+/* part02 */
+
+/* part02 */
+
+/* part02 */
+
+.title01 {
+  padding: 1.2rem 0 0.85rem 0;
+  color: white;
+}
+
+.title01 p:first-child {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  opacity: 0.7;
+}
+
+.title01 p:last-child {
+  font-size: 0.85rem;
+  opacity: 0.4;
+}
+
+/* content */
+
+/* content */
+
+/* content */
+
+/* content */
+
+.content p,
+.content a {
+  color: white;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.content p {
+  opacity: 0.7;
+}
+
+.p2 {
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.wechat span {
+  display: inline;
+}
+
+.wechat {
+  cursor: none;
+}
+
+.wechat::before {
+  content: '';
+  position: fixed;
+  top: 48%;
+  left: 50%;
+  z-index: 9;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  background-color: grey;
+  background-image: url(./image/qrcode1.jpg);
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.wechat:hover::before {
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* footer */
+
+/* footer */
+
+/* footer */
+
+/* footer */
+
+.audio {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: -3;
+  transform: translate(-50%, -50%);
+}
